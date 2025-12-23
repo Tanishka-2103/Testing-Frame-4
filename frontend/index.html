@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Testing Standards</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="step done">● Product Details</div>
+    <div class="step done">● Technical Specification Documents</div>
+    <div class="step done">● Testing Requirements</div>
+    <div class="step active">● Testing Standards</div>
+    <div class="step">● Lab selection and Review</div>
+  </aside>
+
+  <!-- Content -->
+  <main class="content">
+
+    <h1>Testing Standards</h1>
+
+    <!-- Region -->
+    <section class="card">
+      <h3>Region</h3>
+
+      <div class="region-box">
+        <select>
+          <option>Country</option>
+        </select>
+
+        <div class="checkboxes">
+          <label><input type="checkbox" value="India" checked> India</label>
+          <label><input type="checkbox" value="Europe" checked> Europe</label>
+          <label><input type="checkbox" value="Asia"> Asia</label>
+        </div>
+      </div>
+
+      <div class="tags" id="region-tags"></div>
+    </section>
+
+    <!-- Standards -->
+    <section class="card grid">
+      <div>
+        <h4>Recommended Standards</h4>
+        <label><input type="checkbox" checked> ESD immunity: IEC 61000-4-2</label>
+        <label><input type="checkbox" checked> Conducted RF immunity: IEC 61000-4-6</label>
+      </div>
+
+      <div>
+        <h4>Preferred Standards</h4>
+        <label><input type="checkbox"> Cold Test: IEC 60068-2-1</label>
+        <label><input type="checkbox"> Dry Heat Test: IEC 60068-2-2</label>
+        <label><input type="checkbox"> Damp Heat (steady)</label>
+        <label><input type="checkbox"> Damp Heat (cyclic)</label>
+        <label><input type="checkbox" checked> Thermal Cycling: IEC 60068-2-14</label>
+      </div>
+    </section>
+
+    <section class="card">
+      <h4>Selected Standards</h4>
+      <div class="tags" id="standard-tags"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <button class="secondary">← Previous</button>
+      <div>
+        <button class="link">Save as Draft</button>
+        <button class="primary">Next →</button>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
